@@ -1,5 +1,9 @@
+@import "latte.css";
+
 * {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #4c4f69; 
+    
     /*outline: red solid 1px;*/
 }
 
@@ -8,8 +12,8 @@ ul {
 }
 
 nav ul{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 
     display: flex;
     flex-flow: row nowrap;
@@ -17,17 +21,25 @@ nav ul{
 
     font-size: 2rem;
 
-    border: #dce0e8 sold 2px;
-    background-color: #eff1f5;
+	background-color:#eff1f5;
+	border-bottom:#dce0e8;
+	border-radius: 3px;
+
+    box-shadow:  0px 0px 7px 0px #209fb5;
 }
 
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navItems {
+    display: flex;
+    justify-content: left;
+}
 
 .mainItem{
-    margin: 0px;
-    justify-content: left; 
-    color: #4c4f69; 
-    margin-right: auto;
-    margin-left: .6rem;
+    margin: 0px auto 0px 0px;
 } 
 
 .OtherItem {
@@ -36,6 +48,34 @@ nav ul{
 }
 
 body {
-    margin: 0px;
-    color: aqua;
+    background-color: #e6e9ef;
 }
+
+.mainBox {
+    display: flex;
+
+}
+
+img {
+    border-radius: 3px;
+}
+
+@media (max-width: 850px)  {
+
+    .navItems {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .OtherItem {
+        display: none;
+    }
+
+    .mainItem {
+        margin: 0px;
+    }
+
+    img :hover{
+        outline: #4c4f69 solid 10px;
+    }
+  }
