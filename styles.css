@@ -48,9 +48,9 @@ nav ul li h1 a{
         align-items: center;
 }
 
-#mainNav .leftNav img {
+#mainNav img {
         border-radius: 3px;
-        margin-right: 3px;
+        margin-right: .5rem;
 }
 #mainNav .midNav {
         display: flex;
@@ -90,8 +90,9 @@ body {
         }
 
         .mobileNav {
-            display: flex;
-            justify-content: flex-end;
+                display: flex;
+                justify-content: flex-end;
+                margin: 0px 3px 0px 0px;
         }
 
         nav #mainNav {
