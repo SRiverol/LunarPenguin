@@ -7,11 +7,12 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <link rel="stylesheet" href="styles.css" type="text/css">
                 <link rel="icon" type="image/x-icon" href="LunarPenguin.png">
+                <script src="scripts.js"></script>
                 <title>LunarPenguin.xyz Home</title>
         </head>
 
-        <nav>
-                <ul class="navItems">
+        <nav id="navBars">
+                <ul class="navItems" id="mainNav">
                         <img class="mainItem" src="LunarPenguin.png" alt="LunarPenguin Logo; A picture of a penguin on top of a crescent moon" width="36" height="37"> 
                         <li class="mainItem"> <span> <a href="/">LunarPenguin.xyz</a></span></li>
                 	<li class="OtherItem"><a href="c.html">C</a></li>
@@ -19,13 +20,20 @@
                 	<li class="OtherItem"><a href="rust.html">Rust</a></li>
                 	<li class="OtherItem"><a href="javascript.html">Javascript</a></li>
                         <li class="OtherItem"><a href="linux.html">Linux</a></li>
+                        <img class="mobileNav" onclick="displayMenu()" src="Resources/hamburger.svg" alt="Hamburger Menu" width="32" height="37">
                 </ul>
+
+                <ul class="navItems" id="navMenu">
+                        <a href="c.html"><h5>C Projects</h5></a>
+                        <a href="java.html"><h5>Java Projects</h5></a>
+                        <a href="rust.html"><h5>Rust Projects</h5></a>
+                        <a href="javascript.html"><h5>Javascript Projects</h5></a>
+                        <a href="linux.html"><h5>Linux Projects</h5></a>
+                </ul>
+
         </nav>
 
         <body>
-                <h1>Websites are cool: JAVASCRIPT</h1>>
-                <div class="mainBox">
-                        <span class="center"> This is the best website, I have no idea what to fill the rest of the page with now </span>
-                </div>
+
         </body>
 </html>
