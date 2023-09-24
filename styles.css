@@ -10,7 +10,9 @@
 ul {
     list-style-type: none;
 }
-
+nav {
+        border-radius: 3px;     
+}
 nav #mainNav {
     margin: 0px;
     padding: 0px;
@@ -25,7 +27,7 @@ nav #mainNav {
 	border-bottom:#dce0e8;
 	border-radius: 3px;
 
-        outline: #04a5e5 solid 2px;
+        outline: #04a5e5 solid 2px ;
 }
 
 
@@ -89,10 +91,6 @@ img {
         margin: 0px;
     }
 
-    img :hover{
-        outline: #4c4f69 solid 10px;
-    }
-
         .mobileNav {
             display: block;
         }
@@ -115,14 +113,16 @@ img {
                 font-size: 2rem;
 
 	        background-color:#eff1f5;
-	        border-bottom:#8c8fa1 solid 2px;
 	        border-radius: 3px;
         }
 
         #navMenu h5 {
                 display: flex;
+
+	        border-top:#8c8fa1 dotted 2px;
                 margin: 0px;
-                justify-content: center;
+                padding-left: 3px;
+                justify-content: left;
         }
   
 
