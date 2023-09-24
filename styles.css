@@ -35,7 +35,7 @@ nav ul {
 
 nav ul li h1 {
         font-size: 2rem;
-        margin: 0px 0px 0px 0px;
+        margin: 0px 0px 0px .3rem;
 } 
 
 nav ul li h1 a{
@@ -50,7 +50,6 @@ nav ul li h1 a{
 
 #mainNav img {
         border-radius: 3px;
-        margin-right: .5rem;
 }
 #mainNav .midNav {
         display: flex;
@@ -64,6 +63,7 @@ nav ul li h1 a{
         flex-flow: row nowrap;
         align-items: center;
         justify-content: flex-end;
+        margin-right: .3rem;
 
 }
 
@@ -76,7 +76,10 @@ body {
 }
 
 @media (max-width: 950px)  {
-        .rightItem {
+        .rightItem{
+                display: none;
+        }
+        .rightNav a{
                 display: none;
         }
 
