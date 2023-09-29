@@ -7,6 +7,10 @@
 
 }
 
+h1 {
+    font-size: 1.8rem;
+}
+
 
 nav {
         border-radius: 3px;     
@@ -72,8 +76,31 @@ nav ul li h1 a{
 }
 
 body {
-        background-color: #E6E9EF;
+        background-color: #E6E9EF
 }
+
+main {
+        display: grid;
+        grid-template-columns: .75fr 2fr;
+        grid-template-rows: 1fr;
+}
+
+.outlineBox {
+        outline: #04a5e5 solid 2px;
+        background-color:#eff1f5;
+        margin: 3rem;
+        border-radius: 3px;
+        display: flex;
+        flex-flow: column nowrap;
+
+}
+
+.outlineBox h2 {
+        font-size: 2rem;
+        margin: 1rem, auto, .1rem, auto;
+        align-self: center;
+}
+
 
 @media (max-width: 950px)  {
         .rightItem{
@@ -131,6 +158,15 @@ body {
         #navMenu a{
                 text-decoration: none;
         }
+
+
+        main {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+        }
+
+
 
 } 
 
