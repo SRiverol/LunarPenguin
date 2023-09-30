@@ -96,9 +96,40 @@ main {
 }
 
 .outlineBox h2 {
-        font-size: 2rem;
+        font-size: 1.7rem;
         margin: 1rem, auto, .1rem, auto;
         align-self: center;
+}
+
+.outlineBox ul{
+       list-style-type: none;
+}
+.inlineTag {
+        padding-left: 7px;
+}
+
+.inlineTag a {
+        text-decoration: none;
+        margin: 2rem 0px 2rem 0px;
+}
+
+.inbox {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2rem, 2rem, 2rem;
+        margin: 1rem;
+}
+
+.imageBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.title {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
 }
 
 
