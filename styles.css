@@ -274,6 +274,13 @@ main h1 {
         .rightItem{
                 display: none;
         }
+
+.loginArea {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3rem;
+        max-width: 100%;
+}
         .rightNav a{
                 display: none;
         }
