@@ -211,20 +211,21 @@ main h1 {
 .loginScreen {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
 }
 
 .loginArea {
         margin-left: auto;
         margin-right: auto;
         margin-top: 3rem;
+        max-width: 25%;
 }
 
 .loginArea h1 {
         margin: 3px;
 }
 
-.loginArea .box {
+.loginArea #mainBox {
         padding: 1rem;
 }
 
@@ -232,11 +233,43 @@ main h1 {
         margin-top: 1rem;
 }
 
+.loginArea form button {
+        margin-top: 1rem;
+}
 .loginArea form #submit {
         margin-top: 1rem;
 }
-        
 
+
+#trueFalse ul {
+        margin: .5rem;
+        padding-left: 1rem;
+        list-style-type: square;
+}
+
+.loginInfo{
+        display: none;
+}
+
+#toggle {
+        display: none;
+}
+
+#toggle{
+       display: none; 
+}
+
+#toggle2{
+        display: none;
+}
+
+#toggle3{
+       display: none; 
+}
+
+#toggle4{
+        display: none;
+}
 @media (max-width: 950px)  {
         .rightItem{
                 display: none;

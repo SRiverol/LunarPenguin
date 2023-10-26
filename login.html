@@ -13,16 +13,31 @@
         </head>
 
         <main class = "loginScreen">
+
+
                         <div class="loginArea">
                                 <h1>LunarPenguin Login: </h1>
 
                 
-                                <form class="box">
-                                        <label for="fname">First Name: </label><br>
-                                        <input type="text" id="fname" name="fname"><br>
-                                        <label for="lname">Group Name: </label><br>
-                                        <input type="text" id="lname" name="lname"<br><br>
-                                        <input id="submit" type="submit" value="Submit">
+                                <form class="box" id="mainBox">
+
+                                        <div class="loginInfo box" id="trueFalse">
+
+
+                                                <ul>
+                                                        <li id="toggle"></li>
+                                                        <li id="toggle2"></li>
+                                                        <li id="toggle3"></li>
+                                                        <li id="toggle4"></li>
+                                                </ul>
+
+                                        </div>
+
+                                        <label for="fname">Age: </label><br>
+                                        <input oninput="ageismInstruct()" id="fname" type="number" name="fname"><br>
+                                        <label for="lname">Password: </label><br>
+                                        <input type="password" id="lname" name="lname"<br><br>
+                                        <button onclick="ageism()" type="submit">Submit</button>
                                 </form> 
 
                         </div>
