@@ -1,0 +1,155 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #4c4f69; 
+}
+
+nav {
+        border-radius: 3px;     
+}
+
+nav #mainNav {
+        margin: 0px;
+        padding: 0px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+
+
+        font-size: 2rem;
+
+	background-color:#eff1f5;
+	border-radius: 3px;
+
+        outline: #04a5e5 solid 2px ;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li h1 {
+        font-size: 2rem;
+        margin: 0px 0px 0px .3rem;
+} 
+
+nav ul li h1 a{
+        text-decoration: none;
+}
+
+#mainNav .leftNav {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+}
+
+#mainNav img {
+        border-radius: 3px;
+}
+#mainNav .midNav {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+}
+
+#mainNav .rightNav {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: .3rem;
+
+}
+
+.mobileNav {
+    display: none;
+}
+
+body {
+        background-color: #E6E9EF
+}
+
+
+
+
+/*MOBILE STUFF*/
+@media (max-width: 950px)  {
+        .rightItem{
+                display: none;
+        }
+
+        .rightNav a{
+                display: none;
+        }
+
+        .navItems {
+                display: flex;
+                justify-content: space-evenly;
+        }
+
+        .OtherItem {
+                display: none;
+        }
+
+        .mobileNav {
+                display: flex;
+                justify-content: flex-end;
+                margin: 0px 3px 0px 0px;
+        }
+
+        nav #mainNav {
+                margin: 0px;
+                padding: 0px;
+                font-size: 2rem;
+
+	        background-color:#eff1f5;
+	        border-radius: 3px;
+
+                outline: #04a5e5 solid 2px ;
+        }
+        
+        #navMenu{
+                margin: 0px;
+                padding: 0px;
+                background-color:#eff1f5;
+        }
+        #navMenu h1 {
+                display: flex;
+	        border-top:#8c8fa1 dotted 2px;
+                margin: 0px;
+                padding-left: 2px;
+                justify-content: left;
+        }
+
+        #navMenu a{
+                text-decoration: none;
+        }
+
+
+        main {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+        }
+
+
+
+} 
+
+
+
+/*GETTING RID OF MOBILE STUFF*/
+@media (min-width: 950px) {
+        #navMenu {
+                display: none;
+        }
+        .mainItem span{
+           margin: 0px 2rem 0px 3px;
+        }
+} 
+ 
+
+#navMenu {
+    display: none;
+}

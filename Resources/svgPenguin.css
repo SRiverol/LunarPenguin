@@ -1,0 +1,30 @@
+:root{
+        --background: #04a5e5;
+        --penguin: #1e1e2e;
+        --luna: #eff1f5;
+}
+
+svg:hover {
+        --penguin: #eff1f5;
+        --luna: #1e1e2e;
+        --background: #89dceb;
+}
+
+
+.background {
+        fill: var(--background);
+        transition: .5s;
+
+}
+
+.penguin {
+        fill: var(--penguin);
+        transition: .5s;
+}
+
+
+.luna {
+        fill: var(--luna);
+        transition: .5s;
+}
+
