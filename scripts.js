@@ -1,16 +1,15 @@
 function displayMenu() {
-        const navMenu = document.getElementById("navMenu");
-        const navBars = document.getElementById("navBars");
-        const mainNav = document.getElementById("mainNav");
+        const navMenu = document.getElementById("mt");
+        const mainNav = document.getElementById("de");
+        const exlinks = document.getElementById("mtex");
 
         if (navMenu.style.display === "block") {
                 navMenu.style.display = "none";
-                mainNav.style.outline = "#04a5e5 solid 2px ";
-                navBars.style.outline = "none";
+                exlinks.style.display = "none";
         } else {
                 navMenu.style.display = "block";
+                exlinks.style.display = "grid";
                 mainNav.style.outline = "none";
-                navBars.style.outline = "#04a5e5 solid 2px";
         }
 }
 

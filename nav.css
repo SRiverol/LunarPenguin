@@ -1,0 +1,126 @@
+
+* {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: #4c4f69;
+
+}
+
+.de {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: .5fr auto 1fr auto .5fr;
+
+        outline: 3px solid #04A5E5;
+        border-radius: 3px;
+}
+
+nav *:not(#exception, #mt, .exlink) {
+        list-style-type: none;
+        text-decoration: none;
+        margin: 0;
+
+        margin-left: 3px;
+        margin-right: 3px;
+}
+
+.de .leftNav {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+}
+
+.de .midNav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+}
+
+a {
+        background-color: #eff1f5;
+
+        transition: 0.3s;
+}
+
+a:hover {
+        background-color: #dce0e8;
+}
+
+.de .rightNav { 
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+}
+
+body {
+        background-color: #eff1f5;
+}
+
+.mobileNav, #mtex, #mt {
+        display: none;
+        align-items: right;
+        justify-content: center;
+}
+
+
+@media (max-width: 950px)  {
+        #de *{
+            display: none;
+        }
+        
+        nav {
+                display: grid;
+                grid-template-rows: auto auto;
+                grid-template-columns: auto max-content;
+                outline: 3px solid #04A5E5;
+                border-radius: 3px;
+        }
+
+        .de {
+                outline: none;
+        }
+
+         .mobileNav {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0px;
+                margin: 0px;
+
+        } 
+
+        .mobileNav a, .mobileNav ul {
+                padding-left: 2px;
+                font-size: 18px;
+                text-decoration: none;
+                margin-top: 2.5px;
+                margin-bottom: 2.5px;
+        }
+
+        #mt *{
+                border-top: 3px dotted #4c4f69;
+                display: grid;
+                grid-template-rows: 1fr;
+        }
+
+        .exlink {
+                border: 1px solid #4c4f69;
+                border-radius: 3px;
+                margin: 2.5px;
+        }
+
+        .exlink img {
+                margin: 1px;
+                width: 20px;
+                height: 20px;
+        }
+}
+
+@media (min-width: 950px) {
+        #mt {
+                display: none;
+        }
+}
+
+
+
+
