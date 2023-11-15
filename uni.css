@@ -36,8 +36,14 @@ p {
         justify-content: center;
 }
 
+.box img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
 #indented {
-        margin-left: 9px;
+        margin-left: 15px;
+        list-style-type: indent;
 }
 
 #para {
