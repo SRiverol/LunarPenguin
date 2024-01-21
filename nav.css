@@ -8,6 +8,11 @@
         border-radius: 3px;
 }
 
+nav {
+        box-shadow:
+                rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+                rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
 nav *:not(#exception, #mt, .exlink) {
         list-style-type: none;
         text-decoration: none;
@@ -59,7 +64,6 @@ nav *:not(#exception, #mt, .exlink) {
 
         .de {
                 outline: none;
-
                 background-color: #e6e9ef;
         }
 
