@@ -1,9 +1,10 @@
 .de {
         display: grid;
         grid-template-rows: auto;
-        grid-template-columns: .5fr auto 1fr auto .5fr;
+        grid-template-columns: 0.5fr auto 1fr auto 0.5fr;
 
-        outline: 3px solid #04A5E5;
+        background-color: #e6e9ef;
+        outline: 3px solid #04a5e5;
         border-radius: 3px;
 }
 
@@ -28,60 +29,50 @@ nav *:not(#exception, #mt, .exlink) {
         align-items: center;
 }
 
-a {
-        background-color: #eff1f5;
-
-        transition: 0.3s;
-}
-
-a:hover {
-        background-color: #dce0e8;
-}
-
-.de .rightNav { 
+.de .rightNav {
         display: flex;
         justify-content: flex-end;
         align-items: center;
 }
 
-body {
-        background-color: #eff1f5;
-}
-
-.mobileNav, #mtex, #mt {
+.mobileNav,
+#mtex,
+#mt {
         display: none;
         align-items: right;
         justify-content: center;
 }
 
-
-@media (max-width: 950px)  {
-        #de *{
-            display: none;
+@media (max-width: 950px) {
+        #de * {
+                display: none;
         }
-        
+
         nav {
                 display: grid;
                 grid-template-rows: auto auto;
                 grid-template-columns: auto max-content;
-                outline: 3px solid #04A5E5;
+                outline: 3px solid #04a5e5;
                 border-radius: 3px;
+                background-color: #e6e9ef;
         }
 
         .de {
                 outline: none;
+
+                background-color: #e6e9ef;
         }
 
-         .mobileNav {
+        .mobileNav {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 padding: 0px;
                 margin: 0px;
+        }
 
-        } 
-
-        .mobileNav a, .mobileNav ul {
+        .mobileNav a,
+        .mobileNav ul {
                 padding-left: 2px;
                 font-size: 18px;
                 text-decoration: none;
@@ -89,7 +80,7 @@ body {
                 margin-bottom: 2.5px;
         }
 
-        #mt *{
+        #mt * {
                 border-top: 3px dotted #4c4f69;
                 display: grid;
                 grid-template-rows: 1fr;
@@ -113,7 +104,3 @@ body {
                 display: none;
         }
 }
-
-
-
-

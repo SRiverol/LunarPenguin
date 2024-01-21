@@ -1,90 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
         <head>
-                <meta charset="UTF-8">
+                <meta charset="UTF-8" />
                 <meta name="theme-color" content="#EFF1F5" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <meta name="description" content="Archive of projects and stuff">
-                <link rel="stylesheet" href="nav.css" type="text/css">
-                <link rel="stylesheet" href="uni.css" type="text/css">
-                <link rel="stylesheet" href="index.css" type="text/css">
+                <meta
+                        name="viewport"
+                        content="width=device-width, initial-scale=1.0"
+                />
+                <meta
+                        name="description"
+                        content="Archive of projects and stuff"
+                />
+                <link rel="stylesheet" href="nav.css" type="text/css" />
+                <link rel="stylesheet" href="uni.css" type="text/css" />
+                <link rel="stylesheet" href="index.css" type="text/css" />
 
-                <link rel="icon" type="image/x-icon" href="Resources/LunarPenguin-Plain.svg">
+                <link
+                        rel="icon"
+                        type="image/x-icon"
+                        href="Resources/LunarPenguin-Plain.svg"
+                />
                 <script src="scripts.js"></script>
                 <title>LunarPenguin.xyz Home</title>
         </head>
 
         <body>
-        <nav>
-                <div class="de" id="exception">
-                        <div class="leftNav" id="exception">
-                                <img id="exception" src="Resources/LunarPenguin-Plain.svg" alt="LunarPenguin Logo; A picture of a penguin on top of a crescent moon" width="48" height="48"> 
-                                <li> <h1> <a href="/">LunarPenguin</a> </h1> </li>
+                <nav>
+                        <div class="de" id="exception">
+                                <div class="leftNav" id="exception">
+                                        <img
+                                                id="exception"
+                                                src="Resources/LunarPenguin-Plain.svg"
+                                                alt="LunarPenguin Logo; A picture of a penguin on top of a crescent moon"
+                                                width="48"
+                                                height="48"
+                                        />
+                                        <li>
+                                                <h1>
+                                                        <a href="/"
+                                                                >LunarPenguin</a
+                                                        >
+                                                </h1>
+                                        </li>
+                                </div>
+                                <div class="space"></div>
+                                <div class="midNav" id="de">
+                                        <h2><a href="/">Home</a></h2>
+                                        <h2>
+                                                <a href="programming.html"
+                                                        >Programming</a
+                                                >
+                                        </h2>
+                                        <h2><a href="art.html">Art</a></h2>
+                                        <h2><a href="about.html">About</a></h2>
+                                </div>
+                                <div class="space"></div>
+                                <div class="rightNav" id="de">
+                                        <a href="https://github.com/SRiverol"
+                                                ><img
+                                                        src="Resources/github.svg"
+                                                        alt="Github Icon"
+                                                        width="25"
+                                                        height="25"
+                                        /></a>
+                                </div>
                         </div>
-                        <div class="space"></div>
-                        <div class="midNav" id="de">
-                        
-                                <h2> <a href="/">Home</a> </h2> 
-                                <h2> <a href="programming.html">Programming</a> </h2> 
-                                <h2> <a href="art.html">Art</a> </h2> 
-                                <h2> <a href="about.html">About</a> </h2> 
-                
+
+                        <!-- Hamburger Menu For Mobile Only -->
+                        <div class="mobileNav" id="m">
+                                <img
+                                        onclick="displayMenu()"
+                                        src="Resources/hamburger.svg"
+                                        alt="Hamburger Menu"
+                                        width="30"
+                                        height="35"
+                                />
                         </div>
-                       <div class="space"></div>
-                        <div class="rightNav" id="de">
-                                <a href="https://github.com/SRiverol"><img src="Resources/github.svg" alt="Github Icon" width="25" height="25"></a>
+
+                        <ul class="mobileNav" id="mt">
+                                <a id="exception" href="/">Home</a>
+                                <a id="exception" href="programming.html"
+                                        >Programming</a
+                                >
+                                <a id="exception" href="art.html">Art</a>
+                                <a id="exception" href="about.html">About</a>
+                        </ul>
+
+                        <div class="exlink" id="mtex">
+                                <a
+                                        class="mobileNav"
+                                        id="mimg"
+                                        href="https://github.com/SRiverol"
+                                        ><img
+                                                src="Resources/github.svg"
+                                                alt="Github Icon"
+                                                width="25"
+                                                height="25"
+                                /></a>
                         </div>
-                </div>
+                </nav>
+                <main>
+                        <div class="box">
+                                <h2>Outline</h2>
+                                <ol class="outline">
+                                        <li><h3>LunarPenguin - About</h3></li>
+                                        <li><h3>Che Guevara Penguin</h3></li>
+                                        <li><h3>Acquaintances</h3></li>
+                                </ol>
+                        </div>
 
-                <!-- Hamburger Menu For Mobile Only -->
-                <div class="mobileNav" id="m">
-                        <img onclick="displayMenu()" src="Resources/hamburger.svg" alt="Hamburger Menu" width="30" height="35">
-                </div>
+                        <div class="rContent">
+                                <h2>- LunarPenguin -</h2>
 
-
-                <ul class="mobileNav" id="mt">
-                        <a id="exception" href="/">Home</a>
-                        <a id="exception" href="programming.html">Programming</a>
-                        <a id="exception" href="art.html">Art</a>
-                        <a id="exception" href="about.html">About</a>
-                </ul>
-                        
-                <div class="exlink" id="mtex">
-                        <a class="mobileNav" id="mimg" href="https://github.com/SRiverol"><img src="Resources/github.svg" alt="Github Icon" width="25" height="25"></a>
-                </div>
-        </nav>
-        <main>
-                <div class="box">
-                        <h2>Outline</h2> 
-                        <ol class="outline">
-                                <li><h3>LunarPenguin - About</h3></li>
-                                <li><h3>Che Guevara Penguin</h3></li>
-                                <li><h3>Acquaintances</h3></li>
-                        </ol>
-                </div>
-
-
-
-                <div class="rContent">
-                        <h2>- LunarPenguin -</h2>
-
-                                <p id="para"> Hello! This website continues to be under construction. 
-                                        This website exists primarily because I bought a cheap domain 4 months ago and I cant think of much to do with it.
-                                        Will probably display programming projects and writing projects here at some point in the future.
+                                <p id="para">
+                                        Hello! This website continues to be
+                                        under construction. This website exists
+                                        primarily because I bought a cheap
+                                        domain 4 months ago and I cant think of
+                                        much to do with it. Will probably
+                                        display programming projects and writing
+                                        projects here at some point in the
+                                        future.
                                 </p>
-                </div>
+                        </div>
+
+                        <div class="box che">
+                                <h2>Featured</h2>
+                        </div>
+
                         <div class="rContent che">
-                                <h2>- Che The Penguin -</h2>
+                                <h2>- Featured -</h2>
                                 <p id="para">
                                         A proud sponser of lunarpenguin!
                                 </p>
                         </div>
-                        <div class="box che">
-                                <img src="Resources/Cheguin.png" alt="LunarPenguin Logo; A picture of a penguin on top of a crescent moon" width="250" height="250">
-                        </div>
-
-
-        </main>
+                </main>
+                <footer>
+                        <h2>Contact:</h2>
+                </footer>
         </body>
 </html>
