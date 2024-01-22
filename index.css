@@ -11,6 +11,21 @@ main {
         .rContent {
                 margin: 12px;
         }
+
+        .che {
+                display: flex;
+                flex-direction: column;
+        }
+
+        .imgFrame {
+                object-fit: contain;
+        }
+
+        .che img:not(#featured) {
+                width: 100%;
+                height: 100%;
+                margin: 0px;
+        }
 }
 
 @media (max-width: 950px) {

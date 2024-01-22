@@ -104,7 +104,7 @@ nav *:not(#exception, #mt, .exlink) {
 }
 
 @media (min-width: 950px) {
-        #mt {
+        #m * {
                 display: none;
         }
 }
