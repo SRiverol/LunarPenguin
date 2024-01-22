@@ -114,11 +114,13 @@ footer {
         border-radius: 5px;
         border-top: solid 3px #04a5e5;
         min-height: 100%;
-
+        content: 2000px;
         box-shadow:
                 rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
                 rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
         transition: 0.3s;
+
+        background-size: cover;
 }
 
 @media (max-width: 950px) {

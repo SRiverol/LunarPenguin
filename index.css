@@ -5,7 +5,7 @@ main {
 @media (min-width: 950px) {
         main {
                 display: grid;
-                grid-template-columns: .5fr 1fr;
+                grid-template-columns: 0.5fr 1fr;
         }
 
         .rContent {
@@ -13,7 +13,8 @@ main {
         }
 }
 
-
 @media (max-width: 950px) {
-
+        .che {
+                display: none;
+        }
 }
